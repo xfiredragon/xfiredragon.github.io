@@ -1,50 +1,349 @@
-<style>
+/*
+         CA1 Project Style Sheet
+         Filename: styles.css
 
-html{
-    height: 100%;
+         Author:Dwayne Yoong Tze Yang P1727922   
+         Date:13/11/2017     
+*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-body{
-    background-image: url("http://gifgifs.com/animations/other-animations/money/animated-money-falling.gif");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+/* siteNav */
+
+.sitenav {
+    height: 5.000em;
+    width: 100%;  
+    background-color: white;
+    margin-bottom: 3.125em;
+    box-shadow: 0px 4px 15px #ddd;
 }
 
-p, h1 {
-    text-align: center;
-}
-
-input[type=text] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
+.sitenav nav {
+    margin: 0;
+    padding: 0;
     display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+    float: right;
+    margin-right: 5%;
+
 }
 
-input[type=submit] {
+.sitenav nav .sitetag {
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    font-size: 18px;
+    padding: 0 0.278em;
+    font-weight: bold;
+    line-height: 4.444em;
+    margin-right: 1.111em;
+}
+
+.sitenav nav .sitetag a:hover{
+    border: 0.125em grey solid;
+    margin: 0px;
+}
+
+.sitenav nav .sitetag a {
+    text-decoration: none;
+    color: black;
+    padding: 0em 0.625em;
+    margin: 0.125em;
+
+}
+
+.sitenav .logo img{
+    float: left;
+    display: inline-block;
+    margin-top: 0.313em;
+    margin-left: 5%;
+    width: 4.375em;
+    height: 4.375em;
+}
+
+.sitenav .name {
+    float: left;
+    padding: 0.526em;
+    display: inline-block;
+    text-align: center;
+    font-size: 38px;
+    font-family: "Lobster";
+}
+
+/* Main Body */
+
+body {
+    background-color: #f5f5f5;
+    margin: 0 auto;
+    margin-bottom: 0.625em;
+    font-family: "Raleway";
+    min-width: 67.500em;
+    font-size: 16px;
+}
+
+
+body .top {
+    font-size: 16px;
+    text-align: center;
+    border: solid 1px black;
+    max-width: 55%;
+    min-width: 67.500em;
+    margin: 0 auto;
+    padding: 3.125em;
+}
+
+body .top h1{
+    font-size: 48px;
+    line-height: 1em;
+    font-family: "Spectral SC";
+    font-weight: bold;
+}
+
+
+hr {
+    display: block;
+    height: 0.063em;
+    border: 0;
+    border-top: 0.313em solid black;
+    margin-top: 0.313em;
+    padding: 0;
+}
+
+body .top h2, body .top2 h2{
+    font-size: 22px;
+    margin-bottom: 1.591em;
+    font-family:  "Spectral SC";
+    font-weight: 500;
+    color: brown;
+}
+
+body .top img {
+    float: left;
+    width: 30%;
+    max-width: 22.500em;
+    padding-right: 2.250em;
+    display: block;
+}
+
+
+body .top .main{
+    text-align: left;
+}
+
+body .top .main p{
+    font-weight: normal;
+}
+
+body .top .mainBottom p{
+    font-weight: normal;
+    clear: left;
+    padding: 1.6em;
+}
+
+/*slides*/
+
+.slides{
+    padding: 0;
+    width: 800px;
+    height: 532px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+    top: 0;
+    opacity: 0;
+    
+    height: 420px;
+    display: block;
+    position: absolute;
+
+    transform: scale(0);
+
+    transition: all .7s ease-in-out;
+}
+
+
+.slide img {
     width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
+    height: 100%;
+}
+
+.nav label {
+    width: 200px;
+    height: 100%;
+    display: none;
+    position: absolute;
+
+    opacity: 0;
+    z-index: 9;
     cursor: pointer;
+
+    transition: opacity .2s;
+
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 532px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
 }
 
-input[type=submit]:hover {
-    background-color: #45a049;
+.figure:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
 }
 
-div {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+	width: 100%;
+	bottom: 9px;
+	height: 11px;
+	display: block;
+	position: absolute;
+	text-align: center;
 }
 
-</style>
+.nav-dots .nav-dot {
+	top: -5px;
+	width: 11px;
+	height: 11px;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 100%;
+	display: inline-block;
+	background-color: white;
+}
+
+.nav-dots .nav-dot:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+{
+	background: rgba(0, 0, 0, 0.8);
+}
+
+/* 2nd page Container */
+
+body #imagecontainer{
+    max-width: 55%;
+    min-width: 67.500em;
+    margin: 0 auto;
+    padding: 0 3.125em;
+
+}
+
+.slides .slide-container .slide p{
+    font-size: 16px;
+    font-family: "Raleway";
+    margin-top: 25px;
+    text-align: center;
+    border: 2px solid black;
+    margin-bottom: 0.625em;   
+}
+
+.top2{
+    font-size: 16px;
+    text-align: center;
+    max-width: 55%;
+    min-width: 67.500em;
+    margin: 0 auto;
+    padding: 3.125em;
+    padding-bottom: 1em;
+    font-family: 
+}
+
+.top2 h1{
+    font-size: 48px;
+    line-height: 1em;
+    font-family: "Spectral SC";
+    font-weight: bold;
+}
+
+/* ClearFix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
