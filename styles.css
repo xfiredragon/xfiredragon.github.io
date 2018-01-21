@@ -1,21 +1,7 @@
-/*
-         CA1 Project Style Sheet
-         Filename: styles.css
-
-         Author:Dwayne Yoong Tze Yang P1727922   
-         Date:13/11/2017     
-*/
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 html,
 body,
 div,
-span,
-applet,
+spa applet,
 object,
 iframe,
 h1,
@@ -143,11 +129,27 @@ table {
     border-spacing: 0;
 }
 
-body {
-    background-image: url("images/background.png")
+html {
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-/* siteNav */
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 6em;
+    min-height: 100%;
+}
+
+/* Navigation Styling */
 
 .sitenav {
     height: 5.000em;
@@ -155,6 +157,7 @@ body {
     background-color: #FFFFFF;
     margin-bottom: 3.125em;
     box-shadow: 0px 4px 15px #ddd;
+
 }
 
 .sitenav nav {
@@ -178,7 +181,7 @@ body {
 }
 
 .sitenav nav .sitetag a:hover {
-    color: #a52a2a;
+    color: #FF5252;
     transition: all .3s ease;
 
 }
@@ -188,14 +191,19 @@ body {
     color: #000000;
     padding: 0em 0.625em;
     margin: 0.125em;
-
 }
+
+.sitenav nav ul li {
+    font-family: "Roboto Slab";
+    font-weight: 400;
+}
+
 
 .sitenav .logo img {
     float: left;
-    display: inline-block;
+    display: block;
     margin-top: 0.313em;
-    margin-left: 5%;
+    margin-left: 3em;
     width: 70px;
     height: 70px;
 }
@@ -206,344 +214,166 @@ body {
     display: inline-block;
     text-align: center;
     font-size: 38px;
-    font-family: "Lobster";
-    font-weight: normal;
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 700;
 }
 
-/* Main Body */
+/* Button Navigation Styling */
 
-body {
-    background-color: #f5f5f5;
-    margin: 0 auto;
-    font-family: "Raleway";
-    min-width: 67.500em;
-    font-size: 16px;
-    min-height: 100%;
-    font-weight: 600;
-
+.overlay {
+    display: none;
 }
 
+/* Button Navigation Styling */
 
-body .top {
-    font-size: 16px;
+/* Navigation Styling */
+
+/* Overlay Text */
+
+.overlay-text {
+    background-size: cover;
+    padding: 10% 10%;
+    top: 15em;
+    background-image: url(images/banner-editted2.0.jpg);
+    background-repeat: no-repeat;
+    font-size: 21px;
     text-align: center;
-    max-width: 55%;
-    min-width: 67.500em;
-    margin: 0 auto;
-    padding: 3.125em;
+    color: white;
+    z-index: 1;
+    line-height: 30px;
+    overflow: hidden;
 }
 
-body .top h1 {
-    font-size: 48px;
-    line-height: 1em;
-    font-family: "Spectral SC";
-    font-weight: bold;
+.overlay-text h1 {
+    font-family: "Roboto Slab",
+    sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 30px;
+    line-height: 40px;
 }
 
-
-hr {
-    display: block;
-    height: 0.063em;
-    border: 0;
-    border-top: 0.313em solid black;
-    margin-top: 0.313em;
-    padding: 0;
+.overlay-text h2,
+.overlay-text h3,
+.overlay-text h4 {
+    margin-bottom: 20px;
 }
 
-
-body .top h2,
-body .top2 h2,
-body .top3 h2 {
-    font-size: 22px;
-    margin-bottom: 1.591em;
-    font-family: "Spectral SC";
+.overlay-text h2,
+.overlay-text h3 {
+    font-family: "Quicksand", sans-serif;
     font-weight: 500;
-    color: #a52a2a;
 }
 
-body .top img {
-    float: left;
-    width: 30%;
-    max-width: 22.500em;
+.overlay-text h3 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.overlay-text h4 {
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    color: #BCD2EE;
+}
+
+.content {
+    padding: 0 8%;
+}
+
+/* Overlay Text */
+
+/* Main Text */
+
+.main-text {
+    padding: 2% 5%;
+    padding-top: 17px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    background-size: cover;
+    margin: 0 10%;
+
+}
+
+.main-text-header {
+    background-size: cover;
+    padding: 30px 5% 17px 5%;
+    margin: 0 10%;
+
+}
+
+
+.main-text-header h1 {
+    font-family: "Raleway", cursive;
+    font-size: 37px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.main-text-header h2 {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    margin-top: 24px;
+}
+
+.main-text p {
     display: block;
-    box-shadow: 0px 4px 15px #CECECE;
-    margin-right: 2.250em;
-}
-
-
-body .top .main {
-    text-align: left;
-    width: 65%;
-    float: right;
-}
-
-
-body .top .main p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 1em;
-}
-
-body .top .main .quote {
-    color: #696969;
-}
-
-
-
-/* 2nd page Container */
-
-.top2 {
-    font-size: 16px;
-    text-align: center;
-    max-width: 55%;
-    min-width: 67.500em;
-    margin: 0 auto;
-    padding: 3.125em;
-    padding-bottom: 1em;
-}
-
-
-.top2 h1,
-.top3 h1 {
-    font-size: 48px;
-    line-height: 1em;
-    font-family: "Spectral SC";
-    font-weight: bold;
-}
-
-
-/* Page 3 */
-
-.top3 {
-    font-size: 16px;
-    text-align: center;
-    max-width: 55%;
-    min-width: 67.500em;
-    margin: 0 auto;
-    padding: 3.125em;
-    padding-bottom: 0em;
-}
-
-body .main3,
-body .main3 p {
-    font-size: 16px;
-    max-width: 55%;
-    min-width: 67.500em;
-    text-align: center;
-    margin: 0 auto;
-}
-
-body .main3 {
-    padding: 0em 1em;
-}
-
-body .main3 p {
-    padding-bottom: 2em;
-}
-
-body .main3 a {
-    font-family: "Spectral SC";
-}
-
-body .nav3 {
-    text-align: center;
-    font-size: 16px;
-    font-family: "Spectral SC";
-    margin: 0 auto;
-    max-width: 55%;
-    min-width: 67.500em;
-    border-top: 0px;
-    padding: 0 1em;
-    font-weight: bold;
-    line-height: 3em;
-    list-style: none;
-}
-
-body .nav3 a {
-    text-decoration: none;
-    color: #800000;
-    font-size: 18px;
-    padding: 0 1em;
-}
-
-body .nav3 a:hover {
-    border: 0.125em grey solid;
-    margin: 0px;
-}
-
-body .nav3 a:visited {
-    text-decoration: none;
-}
-
-body .main3 .pri {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-}
-
-body .main3 .sec {
-    border-bottom: 1px solid black;
-}
-
-body .main3 img {
-    padding: 1em 0;
-}
-
-body .main3 .pri img {
     float: left;
+    letter-spacing: .5px;
+    line-height: 1.4em;
+    color: rgba(28, 28, 28, 0.9);
+    margin-bottom: 16px;
 }
 
-body. main3 .pri .priTxt {
-    float: right;
-}
-
-body .main3 .sec img {
-    float: right;
-}
-
-
-body .main3 .cur img {
+.floatleft {
     float: left;
+    width: 60%;
+}
+
+.faceimg img {
+    float: right;
+    width: 30%;
+
 }
 
 
-/* colored txt */
 
-#primary,
-#secondary,
-#current {
-    color: #800000;
-}
+/* Main Text */
 
-.colored-txt2 {
-    color: #008080;
-}
-
-.colored-txt1 {
-    color: #008000;
-}
-
-/* footer */
+/* Footer */
 
 footer {
-    background-color: #000;
-    position: relative;
-    clear: both;
-    z-index: 10;
-    padding: 42px;
-
-
-}
-
-footer p {
-    color: #FFF;
-    font-family: "Spectral SC";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1em;
+    background-color: #000000;
 
 }
 
-.footerleft p {
+footer h1 {
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
     float: left;
-    padding-left: 200px;
-    position: relative;
-    display: inline-block;
+    padding-top: 10px;
 }
 
-.footerleft .year {
-    color: #C0C0C0;
-    font-family: "Raleway";
-}
-
-.footerright {
+footer a {
     float: right;
-    padding-right: 200px;
 }
 
-.footerright img {
-    position: relative;
-    display: inline-block;
+footer a img {
     width: 35px;
 }
 
+footer
+/* Footer */
 
-/* Page 2 Display */
-
-.display-wrap {
-    overflow: hidden;
-    width: 55%;
-    margin: 20px auto;
-    min-width: 67.500em;
-
-}
-
-.display-content {
-    position: relative;
-    width: 75%;
-    margin: 0 auto;
-}
-
-.display-content img {
-    width: 100%
-}
-
-
-.display-content h1 {
-    position: absolute;
-    background-color: white;
-    padding: 30px 0;
-    width: 100%;
-    text-align: center;
-    font-family: "Raleway";
-    font-weight: 700;
-    transition: all .8s ease-in-out;
-    font-size: 30px;
-    background-color: rgba(52, 152, 219, 0.9);
-    color: #FBFBFF;
-}
-
-.display-content:hover h1 {
-    transform: translateY(-100%);
-}
-
-.display-content:hover .description {
-    transform: translateY(0%);
-}
-
-.display-content .description {
-    position: absolute;
-    bottom: 0;
-    background-color: white;
-    transition: all .8s ease-in-out;
-    transform: translateY(100%);
-    padding: 30px;
-    background-color: rgba(28, 29, 30, 0.8);
-}
-
-.display-content .description p {
-    line-height: 1.5;
-    font-family: "Raleway";
-    font-weight: 600;
-    color: #FBFBFF;
-
-}
-
-/*Go back to top Page 2 */
-
-.go-top {
-    position: fixed;
-    top: 50%;
-    left: 95%;
-    text-decoration: none;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.3);
-    font-size: 12px;
-    padding: 1em;
-}
-
-.go-top:hover {
-    background-color: rgba(0, 0, 0, 0.6);
-}
-
-
-/*ClearFix*/
+/* Clear Fix */
 
 .cf:before,
 .cf:after {
@@ -556,3 +386,224 @@ footer p {
 .cf:after {
     clear: both;
 }
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.cf {
+    *zoom: 1;
+}
+
+/* Clear Fix */
+
+/* Media Query */
+
+@media only screen and (max-width:1100px) {
+    .sitenav .logo img {
+        display: none;
+    }
+
+    .sitenav .name {
+        padding: 0.526em 0 0.526em 5%;
+    }
+
+    .main-text,
+    .main-text-header {
+        margin: 0 5%;
+    }
+}
+
+@media only screen and (max-width:980px) {
+    .sitenav .name {
+        float: none;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        z-index: 1;
+    }
+    .sitenav nav {
+        display: none;
+    }
+    /* Button Container */
+    .button_container {
+        position: fixed;
+        top: 4%;
+        right: 2%;
+        height: 27px;
+        width: 35px;
+        cursor: pointer;
+        z-index: 100;
+        -webkit-transition: opacity .25s ease;
+        transition: opacity .25s ease;
+    }
+    .button_container:hover {
+        opacity: .7;
+    }
+    .button_container.active .top {
+        -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
+        transform: translateY(11px) translateX(0) rotate(45deg);
+        background: #FFF;
+    }
+    .button_container.active .middle {
+        opacity: 0;
+        background: #FFF;
+    }
+    .button_container.active .bottom {
+        -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
+        transform: translateY(-11px) translateX(0) rotate(-45deg);
+        background: #FFF;
+    }
+    .button_container span {
+        background: #FF5252;
+        border: none;
+        height: 5px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        -webkit-transition: all .35s ease;
+        transition: all .35s ease;
+        cursor: pointer;
+    }
+    .button_container span:nth-of-type(2) {
+        top: 11px;
+    }
+    .button_container span:nth-of-type(3) {
+        top: 22px;
+    }
+    /* Button Container */
+    /* Overlay Container */
+    .overlay {
+        display: inline;
+        position: fixed;
+        background: #FF5252;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0%;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: opacity .35s, visibility .35s, height .35s;
+        transition: opacity .35s, visibility .35s, height .35s;
+        overflow: hidden;
+        z-index: 5;
+    }
+    .overlay.open {
+        opacity: .9;
+        visibility: visible;
+        height: 100%;
+    }
+    .overlay.open li {
+        -webkit-animation: fadeInRight .5s ease forwards;
+        animation: fadeInRight .5s ease forwards;
+        -webkit-animation-delay: .35s;
+        animation-delay: .35s;
+    }
+    .overlay.open li:nth-of-type(2) {
+        -webkit-animation-delay: .4s;
+        animation-delay: .4s;
+    }
+    .overlay.open li:nth-of-type(3) {
+        -webkit-animation-delay: .45s;
+        animation-delay: .45s;
+    }
+    .overlay.open li:nth-of-type(4) {
+        -webkit-animation-delay: .50s;
+        animation-delay: .50s;
+    }
+    .overlay nav {
+        position: relative;
+        height: 70%;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-size: 50px;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 500;
+        text-align: center;
+    }
+    .overlay ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        display: inline-block;
+        position: relative;
+        height: 100%;
+    }
+    .overlay ul li {
+        display: block;
+        height: 25%;
+        height: calc(100% / 4);
+        min-height: 50px;
+        position: relative;
+        opacity: 0;
+    }
+    .overlay ul li a {
+        display: block;
+        position: relative;
+        color: #FFF;
+        text-decoration: none;
+        overflow: hidden;
+    }
+    .overlay ul li a:hover:after,
+    .overlay ul li a:focus:after,
+    .overlay ul li a:active:after {
+        width: 100%;
+    }
+    .overlay ul li a:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        height: 3px;
+        background: #FFF;
+        -webkit-transition: .35s;
+        transition: .35s;
+    }
+
+    @-webkit-keyframes fadeInRight {
+        0% {
+            opacity: 0;
+            left: 20%;
+        }
+        100% {
+            opacity: 1;
+            left: 0;
+        }
+    }
+
+    @keyframes fadeInRight {
+        0% {
+            opacity: 0;
+            left: 20%;
+        }
+        100% {
+            opacity: 1;
+            left: 0;
+        }
+    }
+
+    /* Overlay Container */
+    .overlay-text {
+        background-image: url(images/bannermobile.png);
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .floatleft {
+        float: none;
+        width: 100%;
+    }
+    .faceimg img {
+        float: none;
+        width: 100%;
+    }
+}
+
+/* Media Query */
