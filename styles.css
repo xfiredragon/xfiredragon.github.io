@@ -596,11 +596,15 @@ body {
     padding-bottom: 10em;
 }
 
+.three-icon-column-a {
+    padding-bottom: 0;
+}
 
 .education-text {
     text-align: center;
     padding: 3.125em 0;
 }
+
 
 .year {
     color: #FF5252;
@@ -619,6 +623,12 @@ body {
     color: rgba(28, 28, 28, 0.9);
     font-weight: 500;
 }
+
+.column-a {
+    float: left;
+    width: 33%;
+}
+
 
 /* Page 3 */
 
@@ -880,16 +890,7 @@ footer a img {
     }
 }
 
-@media only screen and (max-width:800px) {
-    .floatleft {
-        float: none;
-        width: 100%;
-    }
-    .faceimg img {
-        float: none;
-        width: 100%;
-    }
-}
+@media only screen and (max-width:800px) {}
 
 
 
@@ -904,20 +905,23 @@ footer a img {
     .callbacks_nav {
         top: 47%;
     }
+    .floatleft {
+        float: none;
+        width: 100%;
+    }
+    .faceimg img {
+        float: none;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 450px) {
     .logo {
         display: none;
     }
-    .drawing {
-        float: none;
-        width: 100%;
-        margin: 0 auto;
-        padding-top: 5px;
-
-    }
 }
+
+
 
 @media screen and (max-width: 970px) {
     .rslider_btmtxt,
@@ -935,7 +939,8 @@ footer a img {
         margin-bottom: 30px;
     }
 
-    .column {
+    .column,
+    .column-a {
         width: 50%;
     }
 
@@ -955,6 +960,17 @@ footer a img {
         width: 100%;
     }
 
+
+}
+
+@media screen and (max-width:500px) {
+    .drawing {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 5px;
+
+    }
 }
 
 /* Media Query */
