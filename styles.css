@@ -183,7 +183,6 @@ body {
 .sitenav nav .sitetag a:hover {
     color: #FF5252;
     transition: all .3s ease;
-
 }
 
 .sitenav nav .sitetag a {
@@ -193,7 +192,12 @@ body {
     margin: 0.125em;
 }
 
-.sitenav nav ul li {
+.sitenav nav .active a {
+    color: #FF5252;
+
+}
+
+.sitenav nav ul li a {
     font-family: "Roboto Slab";
     font-weight: 400;
 }
@@ -232,7 +236,7 @@ body {
 
 .overlay-text {
     background-size: cover;
-    padding: 10% 10%;
+    padding: 10% 15%;
     top: 15em;
     background-image: url(images/banner-editted2.0.jpg);
     background-repeat: no-repeat;
@@ -242,6 +246,7 @@ body {
     z-index: 1;
     line-height: 30px;
     overflow: hidden;
+
 }
 
 .overlay-text h1 {
@@ -291,6 +296,7 @@ body {
     font-weight: 500;
     background-size: cover;
     margin: 0 10%;
+    font-size: 16px;
 
 }
 
@@ -303,20 +309,12 @@ body {
 
 
 .main-text-header h1 {
-    font-family: "Raleway", cursive;
+    font-family: "Roboto Slab", cursive;
     font-size: 37px;
     font-weight: 700;
-    font-style: italic;
+    margin-top: 60px;
 }
 
-.main-text-header h2 {
-    font-family: "Quicksand", sans-serif;
-    font-weight: 400;
-    font-size: 50px;
-    text-transform: uppercase;
-    line-height: 1.2em;
-    margin-top: 24px;
-}
 
 .main-text p {
     display: block;
@@ -325,6 +323,7 @@ body {
     line-height: 1.4em;
     color: rgba(28, 28, 28, 0.9);
     margin-bottom: 16px;
+
 }
 
 .floatleft {
@@ -341,6 +340,287 @@ body {
 
 
 /* Main Text */
+
+/* Page 2 */
+
+#page {
+    box-sizing: border-box;
+    width: auto;
+    margin: auto;
+    max-width: 1080px;
+    padding: 0 34px;
+    padding-bottom: 2%;
+
+}
+
+.p2_top {
+    margin: 1.5em auto .3em;
+
+}
+
+.p2_top h1 {
+    font-size: 24px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1c1c1c
+}
+
+.p2_top h2 {
+    font-size: 20px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: #1c1c1c;
+    margin-bottom: 30px;
+}
+
+
+/* Page 2 */
+
+/* imagespage2 */
+
+.rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.rslides li {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto 40px;
+}
+
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.rslides img {
+    display: block;
+    position: relative;
+    z-index: 1;
+    height: auto;
+    width: 100%;
+    border: 0;
+    overflow: hidden;
+}
+
+
+.rslides .caption {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    text-shadow: none;
+    color: #BCD2EE;
+    background: #000;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px 20px;
+    margin: 0;
+    max-width: none;
+    font-size: 17px;
+    font-family: "Quicksand", sans-serif;
+
+}
+
+.rslides_nav {
+    position: absolute;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    top: 53%;
+    opacity: 0.7;
+    z-index: 3;
+    text-indent: -9999px;
+    overflow: hidden;
+    text-decoration: none;
+    height: 61px;
+    width: 38px;
+    background: transparent url("themes/themes.gif") no-repeat left top;
+    margin-top: -45px;
+}
+
+.rslides_nav:active {
+    opacity: 1.0;
+}
+
+.rslides_nav.next {
+    right: 0;
+    background-position: right top;
+
+}
+
+.rslider_btmtxt,
+.rslider_btmbtmtxt {
+    margin: 0 14%;
+}
+
+.rslider_btmtxt {
+    margin-bottom: 30px;
+}
+
+.rslider_btmtxt h3 {
+    font-size: 22px;
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: #000;
+    margin-bottom: 34px;
+}
+
+
+.rslider_btmtxt h1,
+.rslider_btmbtmtxt h1 {
+    letter-spacing: .5px;
+    line-height: 1.4em;
+    color: rgba(28, 28, 28, 0.9);
+    margin-bottom: 16px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.rslider_btmtxt ul {
+    list-style-type: disc;
+    padding-left: 30px;
+    float: left;
+}
+
+.rslider_btmbtmtxt ul {
+    list-style-type: disc;
+    padding-left: 30px;
+
+}
+
+.rslider_btmtxt ul li,
+.rslider_btmbtmtxt ul li {
+    font-size: 18px;
+    font-family: "Quicksand", sans-serif;
+    line-height: 1.4em;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.drawing {
+    width: 30%;
+    margin-right: 30px;
+    float: right;
+}
+
+
+
+/* imagespage2 */
+
+/* Page 2 */
+
+/* Page 3 */
+
+#page3 {
+    box-sizing: border-box;
+    width: auto;
+    margin: auto;
+    max-width: 980px;
+    padding: 0 34px;
+    padding-bottom: 2%;
+
+}
+
+.pg3-text {
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: .5px;
+    line-height: 1.4em;
+    color: rgba(28, 28, 28, 0.9);
+    font-weight: 500;
+    margin-top: 3.125em;
+    background-color: #f5f5f5;
+    text-align: center;
+    border-radius: 0.1875em;
+    padding: 3em 0;
+}
+
+.pg3-text .title,
+.pg3-text .title2 {
+    display: block;
+}
+
+.pg3-text .title p {
+    font-size: 22px;
+    font-family: "Quicksand", serif;
+    font-weight: 700;
+    margin-bottom: 2.5em;
+}
+
+.education-text .title2 p {
+    font-size: 22px;
+    font-family: "Quicksand", serif;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.pg3-text img {
+    width: 3.125em;
+    height: 3.125em;
+}
+
+.pg3-text figure {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 40px;
+    -webkit-margin-end: 40px;
+}
+
+.column {
+    float: left;
+    width: 33.3333%;
+}
+
+.three-icon-column {
+    padding-bottom: 10em;
+}
+
+
+.education-text {
+    text-align: center;
+    padding: 3.125em 0;
+}
+
+.year {
+    color: #FF5252;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    margin-bottom: 0.625em;
+    margin-top: 1.5625em;
+    font-size: 18px;
+}
+
+.pg3-btm-text {
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: .5px;
+    line-height: 1.4em;
+    color: rgba(28, 28, 28, 0.9);
+    font-weight: 500;
+}
+
+/* Page 3 */
 
 /* Footer */
 
@@ -370,7 +650,6 @@ footer a img {
     width: 35px;
 }
 
-footer
 /* Footer */
 
 /* Clear Fix */
@@ -591,7 +870,13 @@ footer
 
     /* Overlay Container */
     .overlay-text {
-        background-image: url(images/annoob.jpg);
+        background-image: url(images/bannermobile.png);
+    }
+
+    .sitenav .logo img {
+        display: block;
+        position: absolute;
+        margin-left: 5%;
     }
 }
 
@@ -604,6 +889,72 @@ footer
         float: none;
         width: 100%;
     }
+}
+
+
+
+@media only screen and (max-width:630px) {
+    .overlay-text {
+        text-align: left;
+        padding: 10% 10%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .callbacks_nav {
+        top: 47%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .logo {
+        display: none;
+    }
+    .drawing {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 5px;
+
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .rslider_btmtxt,
+    .rslider_btmbtmtxt {
+        margin: 0 8%;
+        margin-bottom: 30px;
+
+    }
+}
+
+@media screen and (max-width:800px) {
+    .rslider_btmtxt,
+    .rslider_btmbtmtxt {
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .column {
+        width: 50%;
+    }
+
+    .html {
+        position: relative;
+        bottom: 28px;
+    }
+
+    .js {
+        position: relative;
+        top: 19px;
+    }
+
+    .alter {
+        padding: 0 5%;
+        float: none;
+        width: 100%;
+    }
+
 }
 
 /* Media Query */

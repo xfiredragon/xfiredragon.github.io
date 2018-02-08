@@ -1,0 +1,184 @@
+<!Doctype HTML>
+<html>
+
+<head>
+    <title>
+        Trivial Facts
+    </title>
+    <!-- Insert HTML stuff -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700,300|Raleway:500|Roboto+Slab:400,700|" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700i" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+
+</head>
+
+<body id="page2">
+
+    <!-- Navigation -->
+    <div class="sitenav">
+        <nav>
+            <ul>
+                <li class="sitetag"><a href="index.html">Introduction</a></li>
+                <li class="sitetag active"><a href="trivial.html">Trivial Facts</a></li>
+                <li class="sitetag"><a href="education.html">Education</a>
+                </li>
+                <li class="sitetag"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Navigation -->
+
+        <!-- Header -->
+
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.jpg" alt="Logo Icon"></a>
+        </div>
+        <!-- Logo -->
+        <div class="name">
+            Dwayne Yoong
+        </div>
+
+        <!-- Header -->
+    </div>
+
+    <!-- Button Navigation -->
+    <div class="button_container" id="toggle">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+    </div>
+
+    <div class="overlay" id="overlay">
+        <nav class="overlay-menu">
+            <ul>
+                <li><a href="index.html">Introduction</a></li>
+                <li><a href="trivial.html">Trival Facts</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Button Navigation -->
+
+    <main id="page">
+        <!-- Main Text -->
+        <div class="p2_top">
+            <h1>Trivial Facts</h1>
+            <h2>I'm all about having fun in life, doing things now and remembering them later.</h2>
+        </div>
+
+        <!-- Real Sheit yo -->
+        <div class="container">
+            <ul class="rslides" id="slider1">
+                <li><img src="images/badminton.jpg">
+                    <p class="caption">A picture of me and my friends winning a badminton inter-school tourney.</p>
+
+                </li>
+
+
+                <li><img src="images/gaming.jpg">
+                    <p class="caption">A picture of my guild in a video game called Phantasy Star Online 2.
+                    </p>
+
+                </li>
+                <li><img src="images/reading.jpg">
+                    <p class="caption">
+                        My favourite subreddit (NoSleep) on reddit, where I can spend my time reading well written horror stories</p>
+
+                </li>
+                <li><img src="images/rollerskates.jpg">
+                    <p class="caption">
+                        A picture of me "DABBING" in a ice skating ring at Kallang Wave Mall back in 2017</p>
+
+                </li>
+                <li><img src="images/Fluffy.jpg">
+                    <p class="caption">
+                        One of my Favourite drawings also known as "Fluffy"</p>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="rslider_btmtxt cf">
+            <h3>More Infomation</h3>
+            <h1>Things I enjoy doing during my free time:</h1>
+            <ul>
+                <li>Badminton</li>
+                <li>Gaming</li>
+                <li>Reading</li>
+                <li>Rollerskating</li>
+                <li>Listening to Music</li>
+                <li>Drawing</li>
+            </ul>
+            <!-- Image about me please -->
+            <img class="drawing" src="images/me_irl.jpeg">
+        </div>
+
+        <div class="rslider_btmbtmtxt">
+            <h1>Fun Facts:</h1>
+            <ul>
+                <li>
+                    I have a total amount of 8000 hours in Dota 2.
+                </li>
+                <li>
+                    I always enjoyed drawing but always failed art classes in school.
+                </li>
+                <li>
+                    I've competed in various competitions from badminton and rollerskating to gaming competitions
+                </li>
+                <li>
+                    I never won any competitions besides school organized ones.
+                </li>
+                <li>
+                    I was once the top players of a game called Guild Wars 2 and PSO2.
+                </li>
+
+            </ul>
+        </div>
+
+        <!-- Real Sheit yo -->
+
+
+
+        <!-- Main Text -->
+    </main>
+    <!-- Footer Text -->
+    <footer class="cf">
+        <h1>Dwayne Yoong &copy; 2018</h1>
+        <a href="https://www.facebook.com/dwayneisbored"><img src="images/facebook.png" alt="Facebook Icon"></a>
+        <a href="https://www.instagram.com/dwayneisbored/?hl=en"><img src="images/instagram.jpg" alt="Instagram Icon"></a>
+
+    </footer>
+    <!-- Footer Text -->
+    <script src="scripts.js"></script>
+    <script>
+        $(function() {
+            $(".rslides").responsiveSlides({
+                auto: true, // Boolean: Animate automatically, true or false
+                speed: 500, // Integer: Speed of the transition, in milliseconds
+                timeout: 4000, // Integer: Time between slide transitions, in milliseconds
+                pager: false, // Boolean: Show pager, true or false
+                nav: true, // Boolean: Show navigation, true or false
+                random: false, // Boolean: Randomize the order of the slides, true or false
+                pause: false, // Boolean: Pause on hover, true or false
+                pauseControls: true, // Boolean: Pause when hovering controls, true or false
+                prevText: "Previous", // String: Text for the "previous" button
+                nextText: "Next", // String: Text for the "next" button
+                maxwidth: "720px", // Integer: Max-width of the slideshow, in pixels
+                navContainer: "", // Selector: Where controls should be appended to, default is after the 'ul'
+                manualControls: "", // Selector: Declare custom pager navigation
+                namespace: "rslides", // String: Change the default namespace used
+                before: function() {}, // Function: Before callback
+                after: function() {} // Function: After callback
+            });
+        });
+    </script>
+    <script src="responsiveslides.min.js"></script>
+
+</body>
+
+</html>

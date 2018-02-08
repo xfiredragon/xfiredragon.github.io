@@ -1,0 +1,14 @@
+<div class="rslides">
+            <img src="images/badminton.jpg" alt="Badminton">
+            <p>Badminton is my favourite among all the sports I play in my life. I think that badminton is a beautiful sport, being healthy is one thing in life, but I truly feel its all about having fun, especially with your friends. Badminton feels like a video game battle to me, theres always excitement in the game, but there can only be one winner.</p>
+
+            <img src="images/gaming.jpg" alt="Gaming">
+            <p>DOTA 2 or what others may call it "Defense Of The Ancients" is one my favourite and most played games in my entire life. With over 6000 Hours in this game alone, I have learn to truly appreciate the game elements and the lessons I've Learnt from it. I personally feel that Dota 2 has taught me the value of teamwork and how I can use it in my everyday life be it video games or real life.It's like a
+                <a href="https://www.youtube.com/watch?v=55fBpL1IFvU">Game Of Chess.</a>
+            </p>
+
+            <img src="images/reading.jpg" alt="Reading">
+            <p>I love books! It may sound strange coming a guy like me, but I really do!. Reading books is really relaxing, I can sit down in a quiet place and just forget about the world I'm currently in and drift off into the fantasy world of the book. There are just so many books that I can read, I can read light novels online, educational books, fictional or non-fiction, they are all great. </p>
+            <img src="images/rollerskates.jpg" alt="rollerskates">
+            <p>I've always been fascinated by those figure skaters, always wondering how they are able to move their body so elegantly. It really made me enjoy my time in the skating ring, seeing how people are able to do such amazing stuns and how I've always tried to attempt these stuns but never actually managed to do it. 8 years later and I still haven't lost interest in it.</p>
+        </div>
