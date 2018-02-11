@@ -12,88 +12,87 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:700i" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-
-
     </script>
+</head>
 
-    <body>
+<body>
 
+    <!-- Navigation -->
+    <div class="sitenav">
+        <nav>
+            <ul>
+                <li class="sitetag"><a href="index.html">Introduction</a></li>
+                <li class="sitetag"><a href="trivial.html">Trivial Facts</a></li>
+                <li class="sitetag"><a href="education.html">Education</a>
+                </li>
+                <li class="sitetag active"><a href="contact.html">Feedback</a></li>
+            </ul>
+        </nav>
         <!-- Navigation -->
-        <div class="sitenav">
-            <nav>
-                <ul>
-                    <li class="sitetag"><a href="index.html">Introduction</a></li>
-                    <li class="sitetag"><a href="trivial.html">Trivial Facts</a></li>
-                    <li class="sitetag"><a href="education.html">Education</a>
-                    </li>
-                    <li class="sitetag active"><a href="contact.html">Feedback</a></li>
-                </ul>
-            </nav>
-            <!-- Navigation -->
 
-            <!-- Header -->
+        <!-- Header -->
 
-            <!-- Logo -->
-            <div class="logo">
-                <a href="index.html"><img src="images/logo.jpg" alt="Logo Icon"></a>
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.jpg" alt="Logo Icon"></a>
+        </div>
+        <!-- Logo -->
+        <div class="name">
+            Dwayne Yoong
+        </div>
+
+        <!-- Header -->
+    </div>
+
+    <!-- Button Navigation -->
+    <div class="button_container" id="toggle">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+    </div>
+
+    <div class="overlay" id="overlay">
+        <nav class="overlay-menu">
+            <ul>
+                <li><a href="index.html">Introduction</a></li>
+                <li><a href="trivial.html">Trival Facts</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="contact.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Button Navigation -->
+
+    <div class="main-form">
+        <form name="myForm" class="form-basic" onsubmit="return validateForm()" method="get" action="results.html">
+
+            <div class="form-title">
+                <h1>Feedback my website</h1>
             </div>
-            <!-- Logo -->
-            <div class="name">
-                Dwayne Yoong
-            </div>
 
-            <!-- Header -->
-        </div>
-
-        <!-- Button Navigation -->
-        <div class="button_container" id="toggle">
-            <span class="top"></span>
-            <span class="middle"></span>
-            <span class="bottom"></span>
-        </div>
-
-        <div class="overlay" id="overlay">
-            <nav class="overlay-menu">
-                <ul>
-                    <li><a href="index.html">Introduction</a></li>
-                    <li><a href="trivial.html">Trival Facts</a></li>
-                    <li><a href="education.html">Education</a></li>
-                    <li><a href="contact.html">Feedback</a></li>
-                </ul>
-            </nav>
-        </div>
-        <!-- Button Navigation -->
-
-        <div class="main-form">
-            <form class="form-basic" method="get" action="results.html">
-
-                <div class="form-title">
-                    <h1>Feedback my website</h1>
-                </div>
-
-                <div class="form-div">
-                    <label>
-                        <span>Full name</span>
+            <div class="form-div">
+                <label>
+                        <span>*Full name</span>
                         <input type="text" name="name">
                     </label>
-                </div>
+            </div>
 
-                <div class="form-div">
-                    <label>
-                        <span>Email</span>
+            <div class="form-div">
+                <label>
+                        <span>*Email</span>
                         <input type="email" name="email">
                     </label>
-                </div>
+            </div>
 
-                <div class="form-div">
-                    <label>
+            <div class="form-div">
+                <label>
                         <span>Phone number</span>
                         <input type="number" name="phoneno">
                     </label>
-                </div>
+            </div>
 
-                <div class="form-div">
-                    <label>
+            <div class="form-div">
+                <label>
                         <span>Gender</span>
                         <select name="dropdown">
                             <option>Male</option>
@@ -102,95 +101,117 @@
                             <option>I prefer not to answer</option>
                         </select>
                     </label>
-                </div>
+            </div>
 
-                <div class="form-div">
-                    <label>
+            <div class="form-div">
+                <label>
                         <span id="form-alter">How did you find my website?</span>
                     </label>
-                    <div class="form-checkbox-buttons">
-                        <div>
-                            <label>
-                                <input type="checkbox" name="checkbox">
+                <div class="form-checkbox-buttons">
+                    <div>
+                        <label>
+                                <input type="checkbox" name="checkbox" value="School" checked>
                                 <span>School</span>
                             </label>
-                        </div>
-                        <div>
-                            <label>
-                                <input type="checkbox" name="checkbox">
+                    </div>
+                    <div>
+                        <label>
+                                <input type="checkbox" name="checkbox"
+                                value="Friends">
                                 <span>Friends</span>
                             </label>
-                        </div>
-                        <div>
-                            <label>
-                                <input type="checkbox" name="checkbox">
+                    </div>
+                    <div>
+                        <label>
+                                <input type="checkbox" name="checkbox"
+                                value="Online">
                                 <span>Online</span>
                             </label>
-                        </div>
-                        <div>
-                            <label>
-                                <input type="checkbox" name="checkbox">
+                    </div>
+                    <div>
+                        <label>
+                                <input type="checkbox" name="checkbox"
+                                value="Randomly">
                                 <span>Randomly</span>
                             </label>
-                        </div>
                     </div>
                 </div>
-                <div class="form-div">
-                    <label><span>Were you satisfied with the website?</span></label>
-                    <div class="form-radio-buttons">
+            </div>
+            <div class="form-div">
+                <label><span>Were you satisfied with the website?</span></label>
+                <div class="form-radio-buttons">
 
-                        <div>
-                            <label>
-                                <input type="radio" name="radio">
+                    <div>
+                        <label>
+                                <input type="radio" name="radio"
+                                value="Very Satisfied">
                                 <span>Very Satisfied</span>
                             </label>
-                        </div>
-                        <div>
-                            <label>
-                                <input type="radio" name="radio">
+                    </div>
+                    <div>
+                        <label>
+                                <input type="radio" name="radio"
+                                value="Satisfied">
                                 <span>Satisfied</span>
                             </label>
-                        </div>
-                        <div>
-                            <label>
-                                <input type="radio" name="radio">
+                    </div>
+                    <div>
+                        <label>
+                                <input type="radio" name="radio" checked
+                                value="Neutral">
                                 <span>Neutral</span>
                             </label>
-                        </div>
-                        <div>
-                            <label>
-                                <input type="radio" name="radio">
+                    </div>
+                    <div>
+                        <label>
+                                <input type="radio" name="radio"
+                                value="Unsatisfied">
                                 <span>Unsatisfied</span>
                             </label>
-                        </div>
-                        <div>
-                            <label>
-                                <input type="radio" name="radio">
+                    </div>
+                    <div>
+                        <label>
+                                <input type="radio" name="radio"
+                                value="Rather Not Say">
                                 <span>Rather Not Say</span>
                             </label>
-                        </div>
                     </div>
                 </div>
-                <div class="form-div">
-                    <label>
-                        <span>Write your feedback!</span>
+            </div>
+            <div class="form-div">
+                <label>
+                        <span>*Write your feedback!</span>
                         <textarea name="textarea"></textarea>
                     </label>
-                </div>
-                <div class="form-div">
-                    <button type="submit">Submit</button>
-                </div>
-            </form>
-        </div>
+            </div>
+            <div class="form-div">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
 
-    </body>
+</body>
 
 
-    <footer class="cf ">
-        <h1>Dwayne Yoong &copy; 2018</h1>
-        <a href="https://www.facebook.com/dwayneisbored "><img src="images/facebook.png " alt="Facebook Icon "></a>
-        <a href="https://www.instagram.com/dwayneisbored/?hl=en "><img src="images/instagram.jpg " alt="Instagram Icon "></a>
+<footer class="cf ">
+    <h1>Dwayne Yoong &copy; 2018</h1>
+    <a href="https://www.facebook.com/dwayneisbored "><img src="images/facebook.png " alt="Facebook Icon "></a>
+    <a href="https://www.instagram.com/dwayneisbored/?hl=en "><img src="images/instagram.jpg " alt="Instagram Icon "></a>
 
-    </footer>
-    <!-- Footer Text -->
-    <script src="scripts.js "></script>
+</footer>
+<!-- Footer Text -->
+<script src="scripts.js "></script>
+<script>
+    function validateForm() {
+        var x = document.forms["myForm"]["name"].value;
+        var y = document.forms["myForm"]["email"].value;
+        var z = document.forms["myForm"]["textarea"].value;
+        if (x == "" || y == "" || z == "") {
+            alert("Name, Email and Feedback Must be Filled Out!");
+            return false;
+        }
+
+
+    }
+</script>
+</html>

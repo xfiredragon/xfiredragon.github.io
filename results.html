@@ -12,39 +12,84 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:700i" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-
-
     </script>
 
+</head>
 
-    <body>
+<body>
 
+    <!-- Navigation -->
+    <div class="sitenav">
+        <nav>
+            <ul>
+                <li class="sitetag"><a href="index.html">Introduction</a></li>
+                <li class="sitetag"><a href="trivial.html">Trivial Facts</a></li>
+                <li class="sitetag"><a href="education.html">Education</a>
+                </li>
+                <li class="sitetag active"><a href="contact.html">Feedback</a></li>
+            </ul>
+        </nav>
         <!-- Navigation -->
-        <div class="sitenav">
-            <nav>
-                <ul>
-                    <li class="sitetag"><a href="index.html">Introduction</a></li>
-                    <li class="sitetag"><a href="trivial.html">Trivial Facts</a></li>
-                    <li class="sitetag"><a href="education.html">Education</a>
-                    </li>
-                    <li class="sitetag active"><a href="contact.html">Feedback</a></li>
-                </ul>
-            </nav>
-            <!-- Navigation -->
 
-            <!-- Header -->
+        <!-- Header -->
 
-            <!-- Logo -->
-            <div class="logo">
-                <a href="index.html"><img src="images/logo.jpg" alt="Logo Icon"></a>
-            </div>
-            <!-- Logo -->
-            <div class="name">
-                Dwayne Yoong
-            </div>
-
-            <!-- Header -->
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.jpg" alt="Logo Icon"></a>
+        </div>
+        <!-- Logo -->
+        <div class="name">
+            Dwayne Yoong
         </div>
 
-        <!-- Button Navigation -->
-    </body>
+        <!-- Header -->
+    </div>
+
+    <!-- Button Navigation -->
+    <div class="button_container" id="toggle">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+    </div>
+
+    <div class="overlay" id="overlay">
+        <nav class="overlay-menu">
+            <ul>
+                <li><a href="index.html">Introduction</a></li>
+                <li><a href="trivial.html">Trival Facts</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="contact.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <article id="contentstart">
+        <div class="container">
+            <h2>Your Feedback has been Submitted!</h2>
+            <div class="results">
+                <h3>Your Data:</h3>
+                <script>
+                    var formData = location.search;
+                    formData = formData.substring(1, formData.length);
+                    while (formData.indexOf("+") !== -1) {
+                        formData = formData.replace("+", " ");
+                    }
+                    formData = decodeURIComponent(formData);
+                    var formArray = formData.split("&");
+                    for (var i = 0; i < formArray.length; i = i + 1) {
+                        document.write("<p>" + formArray[i] + "</p>");
+                    }
+                </script>
+            </div>
+        </div>
+    </article>
+</body>
+<!-- Footer Text -->
+<footer class="cf">
+    <h1>Dwayne Yoong &copy; 2018</h1>
+    <a href="https://www.facebook.com/dwayneisbored"><img src="images/facebook.png" alt="Facebook Icon"></a>
+    <a href="https://www.instagram.com/dwayneisbored/?hl=en"><img src="images/instagram.jpg" alt="Instagram Icon"></a>
+
+</footer>
+<!-- Footer Text -->
+</html>
